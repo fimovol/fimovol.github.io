@@ -4,23 +4,124 @@
 }
 *{
     margin: 0;
-    
+    overflow-x: hidden;
 }
-.contenedor{
+.marcaagua{
+    position: absolute;
+    text-transform: uppercase;
+    user-select: none;
+    transform: rotate(-20deg) scale(3);
+    opacity: 30%;
+}
+.contenedor,.segundo{
     background-color: black;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
 }
 nav{
-    height: 60px;
+    height: 50px;
     width: 100%;
-    background-color: rgb(17, 16, 16);
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+.titulo{
+    height: 200px;
+    width: 67rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.spantitulo{
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-family: var(--tipografia);
+    color: white;
+}
+.segundo{
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+}
+.articulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 67rem;
+}
+article{
+    width: 500px;
+    font-family: var(--tipografia);
+}
+article > p,article > span{
+    color: white;
+}
+.aiconoabout{
+    text-decoration: none;
+    color: white;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.datosabout{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.datosaboutcontenedor{
+    margin-top: 30px;
+    display: grid;
+    height: 100px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.footerabout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.datosabout span{
+    color: white;
+}
+.footerabout > span{
+    color: white;
+}
+.redessociales{
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+.icono{
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: var(--tipografia);
+    text-transform: uppercase;
+}
+.imagen{
+    width: 400px;
+    height: 400px;
+}
+.articlecenter{
+    width: 42rem;
+    display: flex;
+    justify-content: center;
 }
 .elementonav{
     color: black;
@@ -28,6 +129,7 @@ nav{
     text-transform: uppercase;
     font-family: var(--tipografia);
     color: var(--color);
+    font-size: small;
 }
 .elementonav:hover{
     color: rgb(156, 52, 14);
