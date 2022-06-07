@@ -4,15 +4,12 @@
 }
 *{
     margin: 0;
-    overflow-x: hidden;
+    
 }
-.marcaagua{
-    position: absolute;
-    text-transform: uppercase;
-    user-select: none;
-    transform: rotate(-20deg) scale(3);
-    opacity: 30%;
+body{
+    background-color: black;
 }
+
 .contenedor,.segundo{
     background-color: black;
     height: 100vh;
@@ -31,6 +28,7 @@ nav{
     position: fixed;
     top: 0;
     background-color: black;
+    z-index: 1;
 }
 .titulo{
     height: 200px;
@@ -39,6 +37,7 @@ nav{
     align-items: start;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 12px;
 }
 .spantitulo{
     font-size: xx-large;
@@ -50,16 +49,16 @@ nav{
     background-color: black;
     align-items: center;
     flex-direction: column;
+    height:auto !important; 
 }
 .articulo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: start;
-    width: 67rem;
+    align-items: center;
 }
-article{
-    width: 500px;
-    font-family: var(--tipografia);
+article > p{
+    margin-top: 10px;
 }
 article > p,article > span{
     color: white;
@@ -74,13 +73,15 @@ article > p,article > span{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .datosaboutcontenedor{
-    margin-top: 30px;
-    display: grid;
-    height: 100px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
 }
 .footerabout{
     display: flex;
@@ -92,11 +93,13 @@ article > p,article > span{
 }
 .footerabout > span{
     color: white;
+    text-align: center;
 }
 .redessociales{
     margin-top: 18px;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .icono{
     width: 25px;
@@ -115,13 +118,17 @@ article > p,article > span{
     text-transform: uppercase;
 }
 .imagen{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 .articlecenter{
-    width: 42rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 90%;
     display: flex;
     justify-content: center;
+    font-family: var(--tipografia);
 }
 .elementonav{
     color: black;
