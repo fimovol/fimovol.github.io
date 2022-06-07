@@ -118,8 +118,14 @@ article > p,article > span{
     text-transform: uppercase;
 }
 .imagen{
+    border-radius: 50%;
+    max-width: 607px;
     width: 100%;
     height: auto;
+}
+.root span{
+    color: aliceblue;
+    font-family: var(--tipografia);
 }
 .articlecenter{
     margin-top: 20px;
