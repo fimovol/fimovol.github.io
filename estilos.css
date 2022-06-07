@@ -120,8 +120,6 @@ article > p,article > span{
 .imagen{
     border-radius: 50%;
     max-width: 607px;
-    width: 100%;
-    height: auto;
 }
 .root span{
     color: aliceblue;
